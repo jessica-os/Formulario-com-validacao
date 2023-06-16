@@ -1,36 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/style.css">
-    <title>Formulário com validação</title>
-</head>
-<body>
-    <main class="conteudo">
-    <section class="info">
-        <h2>FICOU COM DÚVIDA?<br>
-            NOS MANDE UMA MENSAGEM!</h2>
-        <p class="info-duvida">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
-    </section>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
 
-    <section class="formulario">
-        <form method="GET" action="index.html">
-            <input type="text" name="nome" id="nome"placeholder="Nome completo *" > <br>
-            <input type="text" name="email" id="email" placeholder="Email *"> <br>
-            <input type="text" name="telefone" id="telefone" placeholder="Telefone *">
-            <textarea name="texto" id="texto" cols="30" rows="5" placeholder="Mensagem *"></textarea>
-            <p>*campos obrigatórios</p>
-            <input class="botao-enviar" type="submit" value="Enviar">
-        </form>
-    </section>
-    </form>
-    <script src="./src/js/index.js"></script>
-</main>
-</body>
+		<link rel="stylesheet" href="./src/css/reset.css" />
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<title>Formulário com validação</title>
+	</head>
+	<body>
+		<main class="conteudo">
+			<section class="info">
+				<h2>
+					FICOU COM DÚVIDA?<br />
+					NOS MANDE UMA MENSAGEM!
+				</h2>
+				<p class="info-duvida">
+					caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.
+				</p>
+			</section>
+
+			<section class="formulario">
+				<form method="GET" action="./index.html" id="form">
+					<div>
+						<input class="campo-obrigatorio" type="text" name="nome" id="nome" placeholder="Nome completo*" /><br />
+						<span class="span">campo obrigatório</span>
+					</div>
+					<div>
+						<input class="campo-obrigatorio" type="text" name="email" id="email" placeholder="Email*" /> <br />
+						<span class="span">campo obrigatório</span>
+					</div>
+					<div>
+						<input class="campo-obrigatorio" type="text" name="telefone" id="telefone" placeholder="Telefone*" />
+						<span class="span">campo obrigatório</span>
+					</div>
+					<div>
+						<textarea
+							class="campo-obrigatorio"
+							name="mensagem"
+							id="mensagem"
+							cols="30"
+							rows="5"
+							placeholder="Mensagem*"></textarea>
+						<span class="span">campo obrigatório</span>
+					</div>
+					<p class="texto">*campos obrigatórios</p>
+					<input class="botao-enviar" type="submit" value="Enviar" />
+				</form>
+			</section>
+
+			<script src="./src/js/index.js"></script>
+		</main>
+	</body>
 </html>
