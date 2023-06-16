@@ -2,7 +2,7 @@ body {
 	height: 100vh;
 	font-family: "Roboto", sans-serif;
 	background: url(../imagem/bg-repeat.jpg) center center;
-	background-size:contain;
+	background-size: contain;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -37,7 +37,7 @@ body {
 }
 input,
 textarea {
-	margin-top: 15px;
+	margin-top: 5px;
 	width: 100%;
 	border: 1px solid #000000;
 	border-radius: 5px;
@@ -46,11 +46,9 @@ textarea {
 textarea {
 	margin-bottom: 0;
 }
-.texto {
-	margin-top: 7px;
-}
+
 .botao-enviar {
-	margin-top: 7px;
+	margin-top: 10px;
 	background-color: #3ccc87;
 	cursor: pointer;
 	color: #ffffff;
@@ -65,7 +63,13 @@ textarea {
 	border-color: #f52e2e;
 }
 .span {
-	display: block;
+	
 	color: #f52e2e;
 	font-size: 8px;
+	opacity: 0;
+}
+
+
+.span-visivel {
+    opacity: 1;
 }
