@@ -31,12 +31,18 @@
 						<span class="span">campo obrigatório</span>
 					</div>
 					<div>
-						<input class="campo-obrigatorio" type="text" name="email" id="email" placeholder="Email*" /> <br />
+						<input class="campo-obrigatorio" type="email" name="email" id="email" placeholder="Email*" /> <br />
 						<span class="span">campo obrigatório</span>
 					</div>
 					<div>
-						<input class="campo-obrigatorio" type="text" name="telefone" id="telefone" placeholder="Telefone*" />
-						<span class="span">campo obrigatório</span>
+						<!-- <input class="campo-obrigatorio" type="number" name="telefone" id="telefone" placeholder="Telefone*" />
+						<span class="span">campo obrigatório</span> -->
+						<input
+							type="tel"
+							id="telefone"
+							placeholder="Telefone* (xx) xxxxx-xxxx"
+							maxlength="11"
+							onkeypress="return somenteNumeros(event)" />
 					</div>
 					<div>
 						<textarea

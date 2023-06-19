@@ -63,13 +63,11 @@ textarea {
 	border-color: #f52e2e;
 }
 .span {
-	
 	color: #f52e2e;
 	font-size: 8px;
 	opacity: 0;
 }
 
-
 .span-visivel {
-    opacity: 1;
+	opacity: 1;
 }
