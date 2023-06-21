@@ -20,7 +20,7 @@ Ao preencher todos os campos, a borda do input deve ficar verde.
 - Display Flex.
 - Responsividade através de mediaqueries.
 - Manipulação do DOM e de eventos como addEventListener.
--  validações de entrada no formulario.
+
 ## Veja como ficou:
 
 ### Desktop
