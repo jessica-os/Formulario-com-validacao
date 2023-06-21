@@ -1,5 +1,5 @@
 # Formulario-com-validacao
-Este projeto consiste na criação de um formulário com validação em JS puro, atividade do curso Dev Quest, módulo de javascriprit intermediário.
+Este projeto consiste na criação de um formulário com validação em JS puro, atividade do curso Dev Quest, módulo de javascript intermediário.
 
 ## Que tipo de validação é feita?
 Ao clicar para enviar o formulário, se caso algum campo não estiver preenchido, a borda do input deve ficar vermelha e uma mensagem de "campo obrigatório" 
@@ -11,11 +11,16 @@ Ao preencher todos os campos, a borda do input deve ficar verde.
 
 - CSS  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
 
-## Habilidades Desenvolvidas:
-- Display Flex
-- Responsividade
-- 
+- Javascript  <img align="center" alt="JS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+          
+          
+          
 
+## Habilidades Desenvolvidas:
+- Display Flex.
+- Responsividade através de mediaqueries.
+- Manipulação do DOM e de eventos como addEventListener.
+-  validações de entrada no formulario.
 ## Veja como ficou:
 
 ### Desktop
