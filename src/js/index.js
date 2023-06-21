@@ -1,6 +1,5 @@
 const formulario = document.getElementById("form");
-const camposObrigatorios = document.querySelectorAll(".campo-obrigatorio");
-const enviar = document.querySelectorAll(".botao-enviar");
+const camposObrigatorios = document.querySelectorAll("input, textarea");
 
 formulario.addEventListener("submit", function (event) {
 	event.preventDefault();
@@ -9,16 +8,17 @@ formulario.addEventListener("submit", function (event) {
 
 function validarCampoVazio(camposObrigatorios) {
 	camposObrigatorios.forEach(item => {
+		const controle = item.parentElement;
+		const mensagemErro = controle.querySelector(".small");
 		if (item.value === "") {
-			const controle = item.parentElement;
-			const mensagemErro = controle.querySelector(".span");
-			mensagemErro.classList.add("span-visivel");
+			mensagemErro.classList.add("small-visivel");
 
 			item.classList.add("campo-vazio");
 			item.classList.remove("campo-preenchido");
 		} else {
 			item.classList.add("campo-preenchido");
 			item.classList.remove("campo-vazio");
+			mensagemErro.classList.remove("small-visivel");
 		}
 	});
 }

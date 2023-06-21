@@ -9,6 +9,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
 
 		<link rel="stylesheet" href="./src/css/reset.css" />
+		<link rel="stylesheet" href="./src/css/responsive.css" />
 		<link rel="stylesheet" href="./src/css/style.css" />
 		<title>Formulário com validação</title>
 	</head>
@@ -26,33 +27,27 @@
 
 			<section class="formulario">
 				<form method="GET" action="./index.html" id="form">
-					<div>
-						<input class="campo-obrigatorio" type="text" name="nome" id="nome" placeholder="Nome completo*" /><br />
-						<span class="span">campo obrigatório</span>
+					<div class="campo-obrigatorio">
+						<input type="text" name="nome" id="nome" placeholder="Nome completo*" /><br />
+						<small class="small">campo obrigatório</small>
 					</div>
-					<div>
-						<input class="campo-obrigatorio" type="email" name="email" id="email" placeholder="Email*" /> <br />
-						<span class="span">campo obrigatório</span>
+					<div class="campo-obrigatorio">
+						<input type="email" name="email" id="email" placeholder="Email*" /> <br />
+						<small class="small">campo obrigatório</small>
 					</div>
-					<div>
-						<!-- <input class="campo-obrigatorio" type="number" name="telefone" id="telefone" placeholder="Telefone*" />
-						<span class="span">campo obrigatório</span> -->
+					<div class="campo-obrigatorio">
 						<input
 							type="tel"
+							name="telefone"
 							id="telefone"
 							placeholder="Telefone* (xx) xxxxx-xxxx"
 							maxlength="11"
 							onkeypress="return somenteNumeros(event)" />
+						<small class="small">campo obrigatório</small>
 					</div>
-					<div>
-						<textarea
-							class="campo-obrigatorio"
-							name="mensagem"
-							id="mensagem"
-							cols="30"
-							rows="5"
-							placeholder="Mensagem*"></textarea>
-						<span class="span">campo obrigatório</span>
+					<div class="campo-obrigatorio">
+						<textarea name="mensagem" id="mensagem" cols="30" rows="5" placeholder="Mensagem*"></textarea>
+						<small class="small">campo obrigatório</small>
 					</div>
 					<p class="texto">*campos obrigatórios</p>
 					<input class="botao-enviar" type="submit" value="Enviar" />

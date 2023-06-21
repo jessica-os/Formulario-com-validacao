@@ -1,20 +1,17 @@
 body {
-	height: 100vh;
 	font-family: "Roboto", sans-serif;
 	background: url(../imagem/bg-repeat.jpg) center center;
 	background-size: contain;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	font-size: 15px;
 }
 .conteudo {
-	max-width: 900px;
+	width: 1440px;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 50px;
 }
 .conteudo .info {
 	color: #ffffff;
@@ -26,25 +23,23 @@ body {
 	margin-bottom: 11px;
 }
 .conteudo .info .info-duvida {
-	font-size: 15px;
 	font-weight: 400;
+	max-width: 350px;
 }
 .formulario {
 	background-color: #ffffff;
 	width: 340px;
-	height: 415px;
+	height: 400px;
 	padding: 20px;
+	border-radius: 2px;
+	
 }
 input,
 textarea {
-	margin-top: 5px;
 	width: 100%;
 	border: 1px solid #000000;
 	border-radius: 5px;
 	padding: 10px;
-}
-textarea {
-	margin-bottom: 0;
 }
 
 .botao-enviar {
@@ -62,12 +57,11 @@ textarea {
 .campo-vazio {
 	border-color: #f52e2e;
 }
-.span {
+.small {
 	color: #f52e2e;
 	font-size: 8px;
 	opacity: 0;
 }
-
-.span-visivel {
+.small-visivel {
 	opacity: 1;
 }
