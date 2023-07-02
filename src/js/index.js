@@ -8,13 +8,13 @@ btnEnviar.addEventListener("click", e => {
 function validaCampo() {
 	camposObrigatorios.forEach(input => {
 		if (input.value) {
-			input.nextElementSibling.classList.remove("small-visivel");
 			input.classList.add("campo-preenchido");
+			input.nextElementSibling.classList.remove("small-visivel");
+			input.classList.remove("campo-vazio");
 		} else {
 			input.nextElementSibling.classList.add("small-visivel");
 			input.classList.remove("campo-preenchido");
 			input.classList.add("campo-vazio");
-			
 		}
 	});
 }
