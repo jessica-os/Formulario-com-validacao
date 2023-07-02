@@ -42,13 +42,16 @@ textarea {
 	padding: 10px;
 }
 
-.botao-enviar {
-	margin-top: 10px;
+.btn-enviar {
+	margin-top: 20px;
 	background-color: #3ccc87;
 	cursor: pointer;
 	color: #ffffff;
 	border: none;
 	font-weight: 700;
+	padding: 10px;
+	width: 100%;
+	border-radius: 5px;
 }
 
 .campo-preenchido {

@@ -28,35 +28,33 @@
 			<section class="formulario">
 				<form method="GET" action="./index.html" id="form">
 					<div class="campo-obrigatorio">
-						<input type="text" name="nome" id="nome" placeholder="Nome completo*" /><br />
+						<input class="input" type="text" name="nome" id="nome" placeholder="Nome completo*" />
 						<small class="small">campo obrigatório</small>
 					</div>
 					<div class="campo-obrigatorio">
-						<input type="email" name="email" id="email" placeholder="Email*" /> <br />
+						<input class="input" type="email" name="email" id="email" placeholder="Email*" />
 						<small class="small">campo obrigatório</small>
 					</div>
 					<div class="campo-obrigatorio">
 						<input
-							type="tel"
+							class="input"
+							type="number"
 							name="telefone"
 							id="telefone"
 							placeholder="Telefone* (xx) xxxxx-xxxx"
-							maxlength="11"
-							onkeypress="return somenteNumeros(event)" />
+							maxlength="11" />
 						<small class="small">campo obrigatório</small>
 					</div>
 					<div class="campo-obrigatorio">
-						<textarea name="mensagem" id="mensagem" cols="30" rows="5" placeholder="Mensagem*"></textarea>
+						<textarea class="input" name="mensagem" id="mensagem" cols="30" rows="5" placeholder="Mensagem*"></textarea>
 						<small class="small">campo obrigatório</small>
 					</div>
 					<p class="texto">*campos obrigatórios</p>
-					<input class="botao-enviar" type="submit" value="Enviar" />
+					<button id="btn-enviar" class="btn-enviar" type="button">Enviar</button>
 				</form>
 			</section>
-			
 
 			<script src="./src/js/index.js"></script>
 		</main>
-		
 	</body>
 </html>

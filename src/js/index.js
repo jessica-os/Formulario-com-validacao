@@ -1,32 +1,20 @@
-const formulario = document.getElementById("form");
-const camposObrigatorios = document.querySelectorAll("input, textarea");
+const camposObrigatorios = document.querySelectorAll(".input");
+const btnEnviar = document.querySelector("#btn-enviar");
 
-formulario.addEventListener("submit", function (event) {
-	event.preventDefault();
-	validarCampoVazio(camposObrigatorios);
+btnEnviar.addEventListener("click", e => {
+	e.preventDefault();
+	validaCampo();
 });
-
-function validarCampoVazio(camposObrigatorios) {
-	camposObrigatorios.forEach(item => {
-		const controle = item.parentElement;
-		const mensagemErro = controle.querySelector(".small");
-		if (item.value === "") {
-			mensagemErro.classList.add("small-visivel");
-
-			item.classList.add("campo-vazio");
-			item.classList.remove("campo-preenchido");
+function validaCampo() {
+	camposObrigatorios.forEach(input => {
+		if (input.value) {
+			input.nextElementSibling.classList.remove("small-visivel");
+			input.classList.add("campo-preenchido");
 		} else {
-			item.classList.add("campo-preenchido");
-			item.classList.remove("campo-vazio");
-			mensagemErro.classList.remove("small-visivel");
+			input.nextElementSibling.classList.add("small-visivel");
+			input.classList.remove("campo-preenchido");
+			input.classList.add("campo-vazio");
+			
 		}
 	});
-}
-function somenteNumeros(e) {
-	var code = e.which || e.keyCode;
-
-	if (code < 48 || code > 57) {
-		e.preventDefault();
-		return false;
-	}
 }
